@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contacto y voluntariado en la Reserva La Romera">
+    <meta name="keywords" content="contacto, voluntariado, La Romera, conservación">
+    <meta name="author" content="Juan Felipe Serna">
+    <meta property="og:title" content="Voluntariado - La Romera">
+    <meta property="og:description" content="Únete al voluntariado de conservación de La Romera">
+    <title>La Romera - Voluntariado</title>
+    <link rel="icon" href="img/favicon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="encabezado">
+        <h1>🌿 La Romera</h1>
+        <p>Conservación de Flora y Fauna del Sur del Valle de Aburrá</p>
+        <p><em>Sabaneta · Envigado · Caldas · La Estrella</em></p>
+    </header>
+
+    <!-- NAV -->
+    <nav class="menu-principal">
+        <a href="index.html">Inicio</a>
+        <a href="informacion.html">Flora y Fauna</a>
+        <a href="galeria.html">Galería</a>
+        <a href="tabla.html">Estadísticas</a>
+        <a href="contacto.html" class="activo">Voluntariado</a>
+    </nav>
+
+    <main>
+        <div class="contenedor-principal">
+
+            <section class="seccion-principal">
+                <article class="articulo">
+                    <h2>🤝 Únete al voluntariado</h2>
+                    <p>Completa el formulario y nos pondremos
+                    en contacto contigo para coordinar tu participación
+                    en las jornadas de conservación de La Romera.</p>
+
+                    <!-- Mensaje de éxito: oculto hasta que el formulario sea válido -->
+                    <div id="mensaje-exito" class="mensaje-exito">
+                        ✅ ¡Gracias! Tu solicitud fue enviada correctamente.
+                        Pronto nos comunicaremos contigo.
+                    </div>
+
+                    <form id="formulario-contacto" class="formulario" novalidate>
+
+                        <!-- Campo nombre -->
+                        <div class="campo-grupo">
+                            <label for="nombre">Nombre completo *</label>
+                            <input type="text"
+                                   id="nombre"
+                                   name="nombre"
+                                   placeholder="Escribe tu nombre completo">
+                            <span class="mensaje-error" id="error-nombre"></span>
+                        </div>
+
+                        <!-- Campo email -->
+                        <div class="campo-grupo">
+                            <label for="email">Correo electrónico *</label>
+                            <input type="email"
+                                   id="email"
+                                   name="email"
+                                   placeholder="ejemplo@correo.com">
+                            <span class="mensaje-error" id="error-email"></span>
+                        </div>
+
+                        <!-- Campo select -->
+                        <div class="campo-grupo">
+                            <label for="municipio">Municipio de residencia *</label>
+                            <select id="municipio" name="municipio">
+                                <option value="">-- Selecciona tu municipio --</option>
+                                <option value="sabaneta">Sabaneta</option>
+                                <option value="envigado">Envigado</option>
+                                <option value="caldas">Caldas</option>
+                                <option value="la-estrella">La Estrella</option>
+                                <option value="otro">Otro municipio</option>
+                            </select>
+                            <span class="mensaje-error" id="error-municipio"></span>
+                        </div>
+
+                        <!-- Campo select actividad -->
+                        <div class="campo-grupo">
+                            <label for="actividad">Actividad de interés *</label>
+                            <select id="actividad" name="actividad">
+                                <option value="">-- Selecciona una actividad --</option>
+                                <option value="reforestacion">Reforestación</option>
+                                <option value="senderos">Limpieza de senderos</option>
+                                <option value="fauna">Monitoreo de fauna</option>
+                                <option value="educacion">Educación ambiental</option>
+                            </select>
+                            <span class="mensaje-error" id="error-actividad"></span>
+                        </div>
+
+                        <!-- Campo mensaje -->
+                        <div class="campo-grupo">
+                            <label for="mensaje">Mensaje *</label>
+                            <textarea id="mensaje"
+                                      name="mensaje"
+                                      rows="5"
+                                      placeholder="Cuéntanos por qué quieres ser voluntario (mínimo 20 caracteres)"></textarea>
+                            <span class="mensaje-error" id="error-mensaje"></span>
+                        </div>
+
+                        <!-- Checkbox -->
+                        <div class="campo-grupo">
+                            <label class="label-checkbox">
+                                <input type="checkbox" id="terminos" name="terminos">
+                                Acepto los términos y condiciones de voluntariado *
+                            </label>
+                            <span class="mensaje-error" id="error-terminos"></span>
+                        </div>
+
+                        <button type="button" id="btn-enviar" class="btn-formulario">
+                            Enviar solicitud
+                        </button>
+
+                    </form>
+                </article>
+            </section>
+
+            <aside class="barra-lateral">
+                <div class="aside-bloque">
+                    <h4>📍 Cómo llegar</h4>
+                    <p style="font-size:1.5rem; color:#444444; line-height:1.6;">
+                        La Reserva La Romera tiene acceso
+                        desde los cuatro municipios custodios.
+                        El ingreso principal está ubicado en
+                        el corregimiento de La Romera,
+                        municipio de Sabaneta.
+                    </p>
+                </div>
+
+                <div class="aside-bloque">
+                    <h4>🕐 Horarios</h4>
+                    <ul>
+                        <li>Lunes a viernes: 8am - 4pm</li>
+                        <li>Sábados: 7am - 3pm</li>
+                        <li>Domingos: 7am - 12pm</li>
+                        <li>Festivos: cerrado</li>
+                    </ul>
+                </div>
+
+                <div class="aside-bloque">
+                    <h4>📋 Requisitos</h4>
+                    <ul>
+                        <li>Mayor de 14 años</li>
+                        <li>Ropa cómoda y botas</li>
+                        <li>Hidratación personal</li>
+                        <li>Compromiso de 4 horas</li>
+                    </ul>
+                </div>
+
+                <div class="aside-bloque">
+                    <h4>🔗 Otras secciones</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="informacion.html">Flora y Fauna</a></li>
+                        <li><a href="galeria.html">Galería</a></li>
+                        <li><a href="tabla.html">Estadísticas</a></li>
+                    </ul>
+                </div>
+            </aside>
+
+        </div>
+    </main>
+
+    <footer class="pie-pagina">
+        <div class="row">
+            <div class="col-sm-4">
+                <h4>🌿 La Romera</h4>
+                <p>Portal de conservación de flora y fauna
+                del sur del Valle de Aburrá.</p>
+            </div>
+            <div class="col-sm-4">
+                <h4>Páginas</h4>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="informacion.html">Flora y Fauna</a></li>
+                    <li><a href="galeria.html">Galería</a></li>
+                    <li><a href="tabla.html">Estadísticas</a></li>
+                    <li><a href="contacto.html">Voluntariado</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-4">
+                <h4>Municipios custodios</h4>
+                <ul>
+                    <li>Sabaneta</li>
+                    <li>Envigado</li>
+                    <li>Caldas</li>
+                    <li>La Estrella</li>
+                </ul>
+            </div>
+        </div>
+        <div class="pie-inferior">
+            <p>🌿 La Romera 2026 — Conservación de Flora y Fauna</p>
+            <p>Desarrollado por <strong>Juan Felipe Serna</strong> — Herramientas de Programación III</p>
+        </div>
+    </footer>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
